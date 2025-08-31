@@ -1,7 +1,7 @@
 import serial
 import re
 
-ser = serial.Serial('/dev/cu.usbmodem1101', 9600, timeout=1)
+ser = serial.Serial('/dev/cu.usbmodem101', 115200, timeout=1)
 
 pattern = re.compile(r'/S(\d+)/R(\d+)/P([0-9]+\.[0-9]+)/B(\d+)')
 
